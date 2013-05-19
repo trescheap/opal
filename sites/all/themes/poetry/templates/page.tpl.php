@@ -9,7 +9,7 @@
         <div class="six columns">  
           <div id="breadcrumbs"><h3><?php if (theme_get_setting('breadcrumbs') == '1') {print $breadcrumb . $title; } ?></h3></div>
         </div>  
-          <img class= 'opalbk' src= 'sites/all/themes/poetry/images/OpalFlowerIllustration.png'> 
+        <img class= 'opalbk' src=' <?php echo $base_path ?>sites/all/themes/poetry/images/OpalFlowerIllustration.png'> 
       </div>
     </div>
   </div> 
