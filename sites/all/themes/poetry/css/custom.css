@@ -59,21 +59,32 @@ background: #E6EFAC;
     border-top: none;
 }
 
-/*lesson list styles*/
-div.view-lesson-list{
+/*lesson, course list styles*/
+div.view-lesson-list, div.view-course-list, div.view-course-with-lessons{
     padding: 10px;
     color: #444;
     background: rgba(255,255,255,0.5);
     text-align: center;}
 
-ul.lesson_item{
-list-style-type: none;
+ul.lesson_item, ul.course_item, ul.course_lesson_item{
+    list-style-type: none;
+    display: inline-block;
 }
 
-ul.lesson_item a{
+ul.lesson_item li, ul.course_item li, ul.course_lesson_item li{
+    float: left;
+    clear:both;
+}
+
+ul.lesson_item a, ul.course_item a, ul.course_lesson_item a{
     color: #444;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
+ul.lesson_item a:hover, ul.course_item a:hover, ul.course_lesson_item a:hover{
+        color: #35a1ff;
+                }
+
+                
