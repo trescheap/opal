@@ -1,0 +1,14 @@
+<?php
+
+function opal_access_node_access($node, $op, $account){
+        global $user;
+        if($node->type != 'lesson'){
+            return NODE_ACCESS_IGNORE;
+        }
+        else if (!(in_array('instructor', $user->roles)) && !(in_array('paid student', $user->roles)) )
+        {
+            return NODE_ACCESS_DENY;
+        }
+    }
+ 
+

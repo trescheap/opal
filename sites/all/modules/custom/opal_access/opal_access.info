@@ -1,0 +1,3 @@
+name = Opal Access
+description = Allows access to content types based on role
+core = 7.x
