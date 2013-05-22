@@ -1,5 +1,4 @@
 <?php haiku_header($page);?>
-  
   <div id="heading_wrapper">
     <div id="heading_wrapper_after">
    	  <div class="row">
